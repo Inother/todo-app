@@ -1,0 +1,9 @@
+<div [class.completed]="todo.completed" style="display:flex; line-height:40px">
+  <md-checkbox style="margin-right:10px" [checked]="todo.completed" (change)="toggle($event.checked)"></md-checkbox>
+
+  <span style="flex:1">{{todo.name}}</span>
+
+  <button md-icon-button color="primary" (click)="delete()">
+    <md-icon svgIcon="close" class="icon-small"></md-icon>
+  </button>
+</div>

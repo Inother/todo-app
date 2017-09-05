@@ -1,0 +1,5 @@
+<md-list>
+  <md-list-item *ngFor="let todo of todos">
+    <todo style="width:100%" [todo]="todo" (toggleRequest)="onToggleTodo(todo, $event)" (deleteRequest)="delete(todo)"></todo>
+  </md-list-item>
+</md-list>
